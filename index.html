@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style></style>
+  </head>
+  <body
+    class="bg-[url('./assets/img/bg.jpg')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center h-screen select-none"
+  >
+    <!-- title -->
+    <div class="text-center px-10 text-yellow-400 select-none max-sm:w-xl">
+      <h1 class="max-md:text-4xl max-lg:text-6xl max-xl:text-7xl xl:text-8xl mb-3 font-extrabold font-['poppins']">
+        Birthday Time Counter
+      </h1>
+      <p class="max-md:text-xs max-lg:text-sm max-xl:text-lg xl:text-xl font-semibold">
+        Developed by
+        <a href="" class="border-b-2 border-yellow-600">AMM.Hathil Thahee</a>.
+        Using HTML, TailwindCSS and JavaScript.
+      </p>
+    </div>
+
+    <!-- input -->
+    <div class="my-10 flex flex-col space-y-3">
+      <input
+        type="date"
+        id="inputDate"
+        class="w-52 h-8 px-2 bg-yellow-500 select-none uppercase font-semibold outline-none border-none cursor-pointer"
+      />
+      <button class="bg-green-500 py-1 px-5 rounded font-semibold" id="startBtn">
+        Start
+      </button>
+
+      <!-- <button class="bg-red-500 py-1 px-5 rounded font-semibold" id="stopBtn">
+        Stop
+      </button> -->
+    </div>
+
+    <!-- Timer -->
+    <div class="flex justify-center items-center cursor-default space-x-2">
+      <!-- Days -->
+      <div
+        class="text-white text-center flex flex-col justify-center items-center"
+      >
+        <span class="max-md:text-6xl md:text-8xl" id="days"> 00 </span>
+        <span>Days</span>
+      </div>
+      
+      <!-- Separator -->
+      <div class="max-md:text-6xl md:text-8xl text-white separator">:</div>
+
+      <!-- Hours -->
+      <div
+        class="text-white text-center flex flex-col justify-center items-center"
+      >
+        <span class="max-md:text-6xl md:text-8xl" id="hours"> 00 </span>
+        <span>Hours</span>
+      </div>
+      
+      <!-- Separator -->
+      <div class="max-md:text-6xl md:text-8xl text-white separator">:</div>
+
+      <!-- Minutes -->
+      <div
+        class="text-white text-center flex flex-col justify-center items-center"
+      >
+        <span class="max-md:text-6xl md:text-8xl" id="minutes"> 00 </span>
+        <span>Minutes</span>
+      </div>
+      
+      <!-- Separator -->
+      <div class="max-md:text-6xl md:text-8xl text-white separator">:</div>
+
+      <!-- Secons -->
+      <div
+        class="text-white text-center flex flex-col justify-center items-center"
+      >
+        <span class="max-md:text-6xl md:text-8xl" id="seconds"> 00 </span>
+        <span>Seconds</span>
+      </div>
+    </div>
+
+    <!-- jQuery file -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main.js file -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
